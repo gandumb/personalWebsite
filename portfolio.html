@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/page-specific/homepage.css">
+    <link rel="stylesheet" href="css/general/navbar.css">
+    <link rel="stylesheet" href="css/general/togglebar.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!--Navbar-->
+        <div class="navbar-toggle" id="toggle-animation">
+            <span class="arrow"></span>
+        </div>
+        <nav class="navbar">
+            <div class="navbar-spacer"></div>
+            <div class="name">
+                <h1>Joshua Mo</h1>
+                <h2>Game Developer</h2>
+            </div>
+            <a href="index.html" class="nav-text">Welcome</a>
+            <a href="/portfolio.html" class="nav-text">Portfolio</a>
+            <a href="/qualifications.html" class="nav-text">Qualifications</a>
+            <a href="/service.html" class="nav-text">Service</a>
+            <div class="color-toggle" onclick="changeBackgroundColor()"></div>
+        </nav>
+
+        <!--Hero Section-->
+        <div class="main-section">
+            <div class="block-wrapper">
+                <div class="headshot-wrapper">
+                    <a href="https://github.com/gandumb"><img src="images/github.svg" alt="" class="headshot"></a>
+                </div>
+                <div class="right-column-wrapper">
+                    <div class="text-block">
+                        <a href="https://github.com/gandumb"><h1>Github</h1></a>
+                        <p>I have several github accounts: two for school, and a personal one. Currently I don't upload any project from Unreal Engine 5 but in the future I will add these as repositories to track their progress.</p>
+                    </div>
+                    <div class="text-block">
+                        <a href="https://github.com/gandumb/Pokemon"><h1>Pokemon Recreation</h1></a>
+                        <p>In this project I learned how to design pixel art images and textures, how to optimze the framerate of a game, and how to implement character movement with mouse and keyboard events in Processing.</p>
+                    </div>
+                    <div class="text-block">
+                        <a href="https://github.com/gandumb/webdev-elements"><h1>Webdev Elements</h1></a>
+                        <p>This project is currently ongoing. I add small elements that can be used on other webpages to it. It works as a seperate playground space for me to experiment with components and to try and make new fun things for future webpages.</p>
+                    </div>
+                    <div class="text-block">
+                        <a href="https://github.com/gandumb/KruskalMazeAlgorithm"><h1>Maze Generation</h1></a>
+                        <p>In this project I learned how to apply the tree data structure to Kruskal's algorith, and how to use it to generate a perfect maze. I improved on the concept by combining it with a recursive maze generation algorithm to generate a perfect maze but with longer passageways.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Footer Section-->
+            <div class="footer-wrapper">
+                <a href="https://github.com/gandumb" class="image-link"><img src="/images/github.svg" alt=""></a>
+                <a href="https://www.instagram.com/mojoatm2023/" class="image-link"><img src="/images/instagram.svg" alt=""></a>
+                <a href="https://www.reddit.com/user/ganidiot/" class="image-link"><img src="/images/reddit.svg" alt=""></a>
+                <a href="https://www.snapchat.com/add/ganidiot?share_id=MEU3RjY0&locale=en_US" class="image-link"><img src="/images/snapchat.svg" alt=""></a>
+                <a href="https://open.spotify.com/user/gandumb" class="image-link"><img src="/images/spotify.svg" alt=""></a>
+                <a href="https://www.twitch.tv/ganidiot" class="image-link"><img src="/images/twitch.svg" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCHKoDfaH7MEbtdfs1LA61Aw" class="image-link"><img src="/images/youtube.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+    <script src="scripts/navbar.js"></script>
+</html>

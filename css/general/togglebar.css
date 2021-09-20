@@ -1,0 +1,81 @@
+ /*  Toggle Bars  */
+
+.navbar-toggle{
+    position: fixed;
+    top: 3vh;
+    left: 3vw;
+
+    background-color: #bbb;
+
+    height: 1.5vw;
+    width: 1.5vw;
+    z-index: 15;
+
+    transform: rotate(-45deg);
+
+    transition: .3s ease;
+
+    cursor: pointer;
+}
+.page-wrapper.open .navbar-toggle {
+    left: calc(11vw);
+    transition: .3s ease;
+    transform: rotate(135deg);
+}
+
+
+.arrow{
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    z-index: 15;
+
+    display: block;
+    width: 95%;
+    height: 95%;
+
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+
+    animation: animateDown 2s linear infinite;
+    animation-delay: -2s;
+}
+
+@keyframes animateDown{
+    0% {
+        top: 0px;
+        left: 0px; 
+        opacity: 0;
+    }
+    70% {
+        top: 0px;
+        left: 0px; 
+        opacity: 1;
+    }
+    100% {
+        top: 10px;
+        left: 10px; 
+        opacity: 1;
+    }
+}
+  
+/*  Color Toggle  */
+.color-toggle {
+    position: fixed;
+    top: 3vh;
+    right: 3vw;
+
+    width: 2vw;
+    height: 2vw;
+
+    background-image: URL("../../images/colorToggle.svg");
+    background-repeat: no-repeat;
+    filter: invert();
+    
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    cursor: pointer;
+}

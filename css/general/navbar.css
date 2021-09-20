@@ -1,0 +1,73 @@
+/*  Navbar  (Default Color Mode)*/
+:root{
+    --navbarColorMode: #141517;
+    --backgroundImage: url("../../images/dark.jpg");
+    --navOptionText: #adadad;
+    --navOptionTextHover: rgb(240,240,240);
+    --navTitleText: rgb(240,240,240);
+    --introText: rgb(15,15,15);
+    --backgroundColor: #000e31;
+    --commonPadding: 4rem;
+}
+
+.navbar {
+    /* background: #141517; */
+    background: var(--navbarColorMode);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    height: 100%;
+    width: 15vw;
+    position: fixed;
+    top: 0;
+    left: -15vw;
+    transition: 0.3s ease;
+ }
+
+ .navbar > *{
+     transform: translateX(2vw);
+ }
+
+ .name {
+    color: var(--navTitleText); 
+    font-size: 1.2rem;
+
+    /*word-wrap:break-word;*/
+ }
+
+ .name *{
+     top: 0;
+     left: 0;
+     margin: 0;
+ }
+
+ .name > h2 {
+    margin-bottom: 3vw;
+ }
+
+.nav-text{
+     text-decoration:none;
+     color: var(--navOptionText); 
+     font-size: 1.2rem;
+     margin:  .2rem;
+ }
+ .nav-text:hover{
+    color: var(--navOptionTextHover); 
+}
+.pop-up-box {
+    display:none;
+}
+
+ .navbar-spacer {
+     flex-grow: .15;
+ }
+
+ .navbar .nav-text:hover::before {
+    content: "◈";
+    position: absolute;
+    left: -1.3rem;
+    top: 0;
+ }
+
