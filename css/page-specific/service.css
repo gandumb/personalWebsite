@@ -3,7 +3,7 @@ body {
     padding: 0;
     margin: 0;
 
-    background-color: #000e31;
+    background-color: var(--backgroundColor);
 }
 
 .card {
@@ -26,7 +26,6 @@ body {
  /*  Page Wrapper  */
 
  .page-wrapper {
-   z-index:-10;
 
    display: flex;
    height: auto;
@@ -55,8 +54,6 @@ body {
 
 .main-section {
    background-color: var(--backgroundColor);
-   
-   z-index:  -1;
 
    display: flex;
    flex-direction: column;
@@ -72,8 +69,7 @@ body {
  .background-image {
     background-image: var(--backgroundImage);
     position: fixed;
-    top: 0;
-    right: 0;
+
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -176,6 +172,8 @@ body {
    border-radius: 25px;
 
    background-color:rgba(255, 255, 255, 0.50);
+
+   font-family: 'Kanit', sans-serif;
 }
 
 .text-block > h1 {
@@ -219,6 +217,8 @@ body {
    flex-direction: row;
    align-items:center;
    justify-content:space-between;
+
+   margin: 0 auto;
 }
 
 .image-link {

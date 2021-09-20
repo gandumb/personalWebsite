@@ -4,9 +4,9 @@ let colorMode = true;
 const lightMode = {
     navbarColorMode: "rgb(230,230,230)",
     backgroundImage: "url(\"../../images/light.png\")",
-    navOptionText: "rgb(130,130,130)",
+    navOptionText: "rgb(120,120,120)",
     navOptionTextHover: "rgb(90,90,90)",
-    navTitleText: "rgb(70,70,70)",
+    navTitleText: "rgb(50,50,50)",
     backgroundColor: "#509fae",
 }
 
@@ -16,7 +16,7 @@ const darkMode = {
     navOptionText: "#adadad",
     navOptionTextHover: "rgb(240,240,240)",
     navTitleText: "rgb(240,240,240)",
-    backgroundColor: "#000e31",
+    backgroundColor: "#00154b",
 }
 
 document.addEventListener('DOMContentLoaded', () => {

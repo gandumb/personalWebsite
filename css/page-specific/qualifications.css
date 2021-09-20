@@ -3,7 +3,7 @@ body {
     padding: 0;
     margin: 0;
 
-    background-color: #000e31;
+    background-color: var(--backgroundColor);
 }
 
 .card {
@@ -144,8 +144,10 @@ body {
 }
 
 .headshot {
+   margin-top: 5vh;
+
+   height: 90vh;
    width: 40vw;
-   height: 100vh;
 
    border-radius: 25px;
 }
@@ -175,6 +177,8 @@ body {
    border-radius: 25px;
 
    background-color:rgba(255, 255, 255, 0.50);
+
+   font-family: 'Kanit', sans-serif;
 }
 
 .text-block > h1 {
@@ -218,6 +222,8 @@ body {
    flex-direction: row;
    align-items:center;
    justify-content:space-between;
+
+   margin: 0 auto;
 }
 
 .image-link {

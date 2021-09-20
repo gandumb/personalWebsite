@@ -24,6 +24,8 @@
     top: 0;
     left: -15vw;
     transition: 0.3s ease;
+
+    font-family: 'Kanit', sans-serif;
  }
 
  .navbar > *{
@@ -52,6 +54,8 @@
      color: var(--navOptionText); 
      font-size: 1.2rem;
      margin:  .2rem;
+
+     font-weight: 300;
  }
  .nav-text:hover{
     color: var(--navOptionTextHover); 
